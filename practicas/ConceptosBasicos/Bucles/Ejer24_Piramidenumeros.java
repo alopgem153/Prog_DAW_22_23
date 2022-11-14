@@ -38,10 +38,7 @@ public class Ejer24_Piramidenumeros {
             //Hago salto de línea
             System.out.println();
 
-            String frase = "sad";
-
-            frase.
-
+            
         } 
     }        
 }
