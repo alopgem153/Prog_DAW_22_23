@@ -11,7 +11,7 @@ public class MenuFraseDaw {
 
         Scanner sc = new Scanner(System.in);
 
-        do
+        while (!salir) 
         {
             //Imprimo Menu
             System.out.println("a - introducir frase");
@@ -103,7 +103,7 @@ public class MenuFraseDaw {
                 sc.nextLine();
             }
 
-        } while (!salir);
+        } //while (!salir);
 
 
         sc.close();
