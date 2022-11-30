@@ -24,9 +24,9 @@ public class FrasePalindroma {
             //comparar letra a letra del inicio al final
             //opcion 1: darle a vuelta a la frase y ver si son iguales
             String fraseAlReves = "";
-            for(int aux = 0; aux < frase.length(); aux++)
+            for(int aux = 0; aux <= frase.length()-1; aux++)
             {
-                fraseAlReves = fraseAlReves + frase.charAt(aux) ;
+                fraseAlReves = frase.charAt(aux) + fraseAlReves  ;
             }
             System.out.println("Frase al reves: " + fraseAlReves);
 

@@ -8,7 +8,7 @@ public class CifradoFrase {
          * 
          */
 
-         String frase = "ABZ AA BBB FF";  //-> 4EFD 4EE 4FFF  
+         String frase = "ESTO ES UN SECRETO";  //-> 4EFD 4EE 4FFF  
          int factorCifrado = 4;
          
         String fraseCifrada = "";
