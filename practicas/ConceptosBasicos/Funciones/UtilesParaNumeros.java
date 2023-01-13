@@ -64,7 +64,7 @@ public class UtilesParaNumeros {
         return digito;
     }
 
-    static boolean esPrimo(int numero) {
+    public static boolean esPrimo(int numero) {
         boolean esPrimo = true;
 
         // for(int aux = 2; aux < numero; aux++)
