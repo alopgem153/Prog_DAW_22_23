@@ -1,14 +1,22 @@
-package ClasesT6.Clases;
+package practicas.ClasesT6.Clases;
 
-class Persona {
+public class Persona {
 
     //Atributos de la clase
-    String nombre;
-    String apellidos;
-    int edad;
-    int estatura;
-    String dni;
+    private String nombre;
+    private String apellidos;
+    private int edad;
+    public int estatura;
+    private String dni;
+    private CuentaCorriente cc;
 
+    static boolean vivo = true;
+
+    
+
+//----------------------------------
+
+   
     //Constructores
     public Persona()
     {
@@ -21,16 +29,91 @@ class Persona {
         this.edad = edad;
     }
 
-    
-
-    public Persona(String nombre, String apellidos, int edad, int estatura, String dni )
+    public Persona(String nombre, String apellidos)
     {
 
     }
 
+    // public Persona(String nombre, int estatura)
+    // {
+
+    // }
+    
+
+    public Persona(String nombre, String apellidos, int edad, int estatura, String dni )
+    {
+        // this.nombre = nombre;
+        // this.edad = edad;
+        this(nombre, edad);
+        
+
+        this.apellidos = apellidos;
+        this.estatura = estatura;
+        this.dni = dni;
+        
+    }
+
     //Métodos
 
-    void saludar()
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        
+        this.edad = edad;
+    }
+
+    public int getEstatura() {
+        return estatura;
+    }
+
+    public void setEstatura(int estatura) {
+        this.estatura = estatura;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public CuentaCorriente getCc() {
+        return cc;
+    }
+
+    public void setCc(CuentaCorriente cc) {
+        this.cc = cc;
+    }
+
+    public static boolean isVivo() {
+        return vivo;
+    }
+
+    public static void setVivo(boolean vivo) {
+        Persona.vivo = vivo;
+    }
+
+
+    public void saludar()
     {
         System.out.println("Hola soy " + nombre);
     }
@@ -58,6 +141,20 @@ class Persona {
     {
         String resultado = "Lunes";
         return resultado;
+    }
+
+    static void matarATodos()
+    {
+        vivo = false;
+        
+    }
+
+    public void crearCuentaCorriente()
+    {
+        CuentaCorriente cc = new CuentaCorriente("00000", this.nombre);
+        this.cc = cc;
+        
+
     }
     
 }

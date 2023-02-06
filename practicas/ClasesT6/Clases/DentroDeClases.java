@@ -1,4 +1,4 @@
-package ClasesT6.Clases;
+package practicas.ClasesT6.Clases;
 
 public class DentroDeClases {
 
@@ -47,6 +47,34 @@ public class DentroDeClases {
 
         Persona p5 = new Persona();
 
+        Persona p6 = new Persona("Pepe", null, 0, 0, "35690835");
+
+        // System.out.println(p6.vivo);
+        // System.out.println(Persona.vivo);
+        // Persona.matarATodos();
+        // System.out.println(p6.vivo);
+        // System.out.println(Persona.vivo);
+
+        if (p5.dni != null)
+        {
+            System.out.println("Nombre de p5: "+ p5.dni);
+        }
+        else
+        {
+            System.out.println("Aún no tiene DNI");
+        }
+
+
+        persona1.crearCuentaCorriente();
+        CuentaCorriente cc_alfonso = persona1.cc;
+        System.out.println(cc_alfonso);
+        //cc_alfonso.saldo = 20;
+        persona1.cc.saldo = 20;
+
+        double saldoActual = cc_alfonso.saldo;
+
+        cc_alfonso.ingresarDinero(20);
+        System.out.println(cc_alfonso);
     }
     
 }
