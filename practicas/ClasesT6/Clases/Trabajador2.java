@@ -7,7 +7,7 @@ public class Trabajador2 extends practicas.ClasesT6.clasesHerencia.Persona
 
     public Trabajador2(String nombre, int edad) {
         super(nombre, edad);
-        this.edad = 33;
+        this.edad = 33; //la podemos usar porque es protected
         
         //TODO Auto-generated constructor stub
     }

@@ -34,4 +34,25 @@ public class Persona {
     {
         return "Hola persona";
     }
+
+    @Override
+    public String toString()
+    {
+        return this.nombre;
+    }
+
+    @Override
+    public boolean equals(Object objeto)
+    {
+        boolean resultado = false;
+
+        //Convertir objeto a la clase persona
+        Persona persona = (Persona)objeto;
+        if (persona.dni == this.dni)
+        {
+            resultado = true;
+        }
+
+        return resultado;
+    }
 }

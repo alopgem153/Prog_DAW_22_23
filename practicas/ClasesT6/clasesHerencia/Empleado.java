@@ -7,10 +7,12 @@ public class Empleado extends Persona
     public Empleado(String nombre, int edad, double sueldo)
     {
         super(nombre);
+        
         //super(nombre, edad);
         // this.nombre = nombre;
         this.edad = edad;
         this.sueldo = sueldo;
+        
         //setAltura(180);
     }
 
@@ -18,6 +20,6 @@ public class Empleado extends Persona
     @Override
     public String decirHola()
     {
-        return super.decirHola() + " - Hola Empleado";
+        return " - Hola Empleado";
     }
 }
