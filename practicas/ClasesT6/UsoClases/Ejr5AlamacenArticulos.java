@@ -1,7 +1,5 @@
 package practicas.ClasesT6.UsoClases;
 
-import javax.lang.model.util.ElementScanner6;
-
 import practicas.ClasesT6.Clases.Articulo;
 
 /*

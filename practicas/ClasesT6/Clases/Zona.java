@@ -1,5 +1,7 @@
 package practicas.ClasesT6.Clases;
 
+import practicas.ClasesT6.clasesHerencia.Persona;
+
 public class Zona {
     private int entradasPorVender;
     public Zona(int n){
@@ -27,5 +29,8 @@ public class Zona {
             entradasPorVender -= n;
             System.out.println("Aquí tiene sus " + n + " entradas, gracias.");
         }
+
+        Persona p1 = new Persona("ASDFASF");
+        p1.
     }
 }

@@ -1,11 +1,11 @@
 package practicas.ClasesT6.Clases;
 
 public class Incidencia {
-    public enum estadoIndicencia {PENDIENTE, RESUELTA, EN_PROCESO, CERRADO}
+    public enum EstadoIndicencia {PENDIENTE, RESUELTA, EN_PROCESO, CERRADO}
 
     //Articulo
     private int codigo;
-    private estadoIndicencia estado;
+    private EstadoIndicencia estado;
     private String descripcionFallo;
     private int puesto;
     private String solucion;
@@ -19,7 +19,7 @@ public class Incidencia {
         this.descripcionFallo = descripcionError;
         this.puesto = puesto;
 
-        this.estado = estadoIndicencia.PENDIENTE;
+        this.estado = EstadoIndicencia.PENDIENTE;
 
         numeroIncidenciasTotales++;
         incidenciasPendientes++;
@@ -31,14 +31,14 @@ public class Incidencia {
     public void resuelve(String descripcionSolucion)
     {
         this.solucion = descripcionSolucion;
-        this.estado = estadoIndicencia.RESUELTA;
+        this.estado = EstadoIndicencia.RESUELTA;
         //setEstado("Resuelto");
         incidenciasPendientes--;
     }
 
     public void cerrarIncidencia()
     {
-        this.estado = estadoIndicencia.CERRADO;
+        this.estado = EstadoIndicencia.CERRADO;
     }
 
     public static int getPendientes()
@@ -46,7 +46,7 @@ public class Incidencia {
         return incidenciasPendientes;
     }
 
-    public void setEstado(estadoIndicencia estado)
+    public void setEstado(EstadoIndicencia estado)
     {
         this.estado = estado;
     }
@@ -58,7 +58,7 @@ public class Incidencia {
         resultado = "Incidencia " + this.codigo + 
                 " - Puesto " + this.puesto + " - " + this.descripcionFallo + 
                 " -" + this.estado +
-                (this.estado == estadoIndicencia.RESUELTA? this.solucion: "");
+                (this.estado == EstadoIndicencia.RESUELTA? this.solucion: "");
 
         return resultado;
     }

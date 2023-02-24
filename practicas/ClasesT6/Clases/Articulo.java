@@ -47,6 +47,7 @@ public class Articulo {
         this.stock = stock;
     }
 
+    @Override
     public String toString() {
         String cadena = "------------------------------------------";
         cadena += "\nCódigo: " + this.codigo;
