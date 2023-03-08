@@ -48,6 +48,7 @@ public class UsoHorasExactas {
    
         System.out.println(re);
         System.out.println("Escriba los segundos");
+        //Scanner sc = new Scanner(System.in);
         int segundos = new Scanner(System.in).nextInt();
  
  
@@ -64,7 +65,8 @@ public class UsoHorasExactas {
         HoraExacta re1 = new HoraExacta(1,2,3);
         HoraExacta re2 = new HoraExacta(1,2,3);
         HoraExacta re3 = new HoraExacta(10,20,30);
-  System.out.println(re1);
+  
+        System.out.println(re1);
         System.out.println(re2);
         System.out.println(re3);
  

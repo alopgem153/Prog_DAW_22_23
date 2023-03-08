@@ -8,6 +8,7 @@ public class HoraExacta  extends Hora
     {
         super(hora, minuto);
         this.segundos = segundos;
+        
     }
 
     public boolean setSegundo(int valor)
@@ -27,6 +28,7 @@ public class HoraExacta  extends Hora
     /**
      * Incrementa en un segundo;
      */
+    @Override
     public void inc()
     {
         if (!setSegundo(this.segundos+1))
