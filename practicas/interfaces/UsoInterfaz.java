@@ -22,6 +22,11 @@ public class UsoInterfaz {
         Cliente c5 = new Cliente("Manolo", 150, 21);
         Cliente c6 = new Cliente("Alfonso", 10, 41) ;
 
+        c1.compareTo(c4);
+
+        ClientecomparatorEdad comparatorEdad = new ClientecomparatorEdad();
+        comparatorEdad.compare(c2, c5);
+
         Supermercado mercadona = new Supermercado("merca", "Hacendado", 1000);
 
         mercadona.nuevoCliente(c1);

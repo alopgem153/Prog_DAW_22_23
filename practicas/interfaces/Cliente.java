@@ -1,6 +1,6 @@
 package practicas.interfaces;
 
-public class Cliente implements Comparable {
+public class Cliente implements Comparable<Cliente> {
 
     //Atributos
     private String nombre;
@@ -35,25 +35,8 @@ public class Cliente implements Comparable {
         this.dinero = dinero;
     }
 
-    @Override
-    public int compareTo(Object o) {
-
-        Cliente c = (Cliente)o;
-        //Compramos por nombre
-        
-        // int resultado = 0 ; //presuponemos que son iguales
-
-        // if (this.nombre.compareTo(c.nombre) > 0)
-        // {
-        //     resultado = 1;
-        // }
-        // else if (this.nombre.compareTo(c.nombre) < 0)
-        // {
-        //     resultado = -1;
-        // }
-
-        // return resultado;
-
+    public int compareTo(Cliente c)
+    {
         //Ordenamos por dinero
         int resultado = 0;
 
@@ -67,8 +50,42 @@ public class Cliente implements Comparable {
         }
 
         return (int)(this.dinero - c.dinero); 
-        
     }
+
+    // @Override
+    // public int compareTo(Object o) {
+
+    //     Cliente c = (Cliente)o;
+    //     //Compramos por nombre
+        
+    //     // int resultado = 0 ; //presuponemos que son iguales
+
+    //     // if (this.nombre.compareTo(c.nombre) > 0)
+    //     // {
+    //     //     resultado = 1;
+    //     // }
+    //     // else if (this.nombre.compareTo(c.nombre) < 0)
+    //     // {
+    //     //     resultado = -1;
+    //     // }
+
+    //     // return resultado;
+
+    //     //Ordenamos por dinero
+    //     int resultado = 0;
+
+    //     if (this.dinero>c.dinero)
+    //     {
+    //         resultado = 1;
+    //     }
+    //     else if(this.dinero < c.dinero)
+    //     {
+    //         resultado = -1;
+    //     }
+
+    //     return (int)(this.dinero - c.dinero); 
+        
+    // }
 
     @Override
     public String toString() {
