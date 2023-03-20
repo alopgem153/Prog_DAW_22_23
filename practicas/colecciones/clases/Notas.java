@@ -11,7 +11,7 @@ public class Notas<T extends Alumno> {
 
     public void escribirNota()
     {
-        System.out.println(objeto.toString() + "SOBRESALIENTE");
+        System.out.println(objeto.toString() + " - SOBRESALIENTE");
     }
 
 

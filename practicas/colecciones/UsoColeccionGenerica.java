@@ -22,6 +22,8 @@ public class UsoColeccionGenerica {
         
         ColeccionGenerica<Integer> coleccionNumero = new ColeccionGenerica<Integer>();
 
+        //ColeccionGenerica<Integer>[] arrayColeccion = new ColeccionGenerica<Integer>[5];
+
 
     }
     

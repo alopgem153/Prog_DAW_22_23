@@ -1,6 +1,6 @@
 package practicas.interfaces;
 
-public class Perro implements Sonido_I {
+public class Perro implements Sonido_I, Comparable<Perro> {
     
     String nombre;
     String raza;
@@ -22,6 +22,19 @@ public class Perro implements Sonido_I {
     public void vozDurmiendo()
     {
         System.out.println("Perro voz Durmiendo");
+    }
+
+    @Override
+    public int compareTo(Perro p) {
+        
+        return this.nombre.compareTo(p.nombre);
+    }
+
+
+    @Override
+    public String toString() {
+        
+        return this.nombre;
     }
 
     
