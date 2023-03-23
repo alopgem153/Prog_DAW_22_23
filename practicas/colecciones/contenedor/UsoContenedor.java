@@ -1,5 +1,7 @@
 package practicas.colecciones.contenedor;
 
+import java.util.ArrayList;
+
 import practicas.interfaces.Perro;
 
 public class UsoContenedor {
@@ -42,6 +44,8 @@ public class UsoContenedor {
         System.out.println("-----------------------");
 
         System.out.println(numeros.toString());
+
+        ArrayList
 
     }
     
