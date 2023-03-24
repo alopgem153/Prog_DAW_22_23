@@ -25,7 +25,17 @@ public class MainSorteo {
         sorteoNombre.add("TONI");
         sorteoNombre.add("JOHN");
 
-        HashSet<String> ganadores = HashSet<String>(sorteoNombre.premiados(2));
+        HashSet<String> ganadores = new HashSet<>(sorteoNombre.premiados(2));
+
+        System.out.println(ganadores);
+
+
+        HashSet<Integer> numerosGanadores = new HashSet<>(sorteoNumeros.premiados(3));
+
+
+        System.out.println(numerosGanadores);
+
+
 
 
     }
