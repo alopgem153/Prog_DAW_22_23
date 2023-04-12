@@ -4,7 +4,7 @@ public class Carta implements Comparable<Carta>{
 
     //private String[] valoresCarta = { "AS" , "dos", "tres", "cuatro", "cinco", "seis", "siete", "Sota", "Caballo", "Rey"};
 
-    private enum valoresCarta { AS , dos, tres, cuatro, cinco, seis, siete, Sota, Caballo, Rey };
+    public enum valoresCarta { AS , dos, tres, cuatro, cinco, seis, siete, Sota, Caballo, Rey };
     public enum Palos {BASTOS, COPAS, ESPADAS, OROS}
 
     //Atributos de carta
@@ -49,4 +49,14 @@ public class Carta implements Comparable<Carta>{
         }
 
     }
+
+    public valoresCarta getValor() {
+        return valor;
+    }
+
+    public Palos getPalo() {
+        return palo;
+    }
+
+    
 }
