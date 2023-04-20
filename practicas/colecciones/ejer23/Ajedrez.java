@@ -41,7 +41,7 @@ public class Ajedrez {
         System.out.println(nnumeroCapturas + " Capturas");
 
         ArrayList<Piezas> piezasCapturadas = new ArrayList<>(); 
-        for (int i = 1; i <= nnumeroCapturas; i++) {
+        for (int i = 0; i < nnumeroCapturas; i++) {
             piezasCapturadas.add(cajaPiezas.get(i));
             
         }
