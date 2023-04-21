@@ -52,17 +52,27 @@ public class App {
         
         System.out.println("---------------------------------");
 
-        LecturaTeclado lc = new LecturaTeclado();
+        // LecturaTeclado lc = new LecturaTeclado();
 
-        int numeroLeido = lc.leerInteger();
+        // System.out.println("Dime un numero entero");
+        // int numeroLeido = lc.leerInteger();
 
-        System.out.println("Numero leido: "+ numeroLeido);
+        // System.out.println("Numero leido: "+ numeroLeido);
 
-        lc.finalizar();
+        // lc.finalizar();
 
-        numeroLeido = lc.leerInteger();
+        // numeroLeido = lc.leerInteger();
 
-        System.out.println("Numero leido: "+ numeroLeido);
+        // System.out.println("Numero leido: "+ numeroLeido);
 
+        Integer resultadoDiv3 = calc.division3(10, 5);
+
+        System.out.println(resultadoDiv3);
+
+        resultadoDiv3 = calc.division3(10, 0);
+
+        System.out.println(resultadoDiv3);
+
+        
     }
 }

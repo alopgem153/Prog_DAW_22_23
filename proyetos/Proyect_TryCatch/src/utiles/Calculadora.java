@@ -49,4 +49,32 @@ public class Calculadora {
         Integer resultado = x/y;
         return resultado;
     }
+
+
+    public Integer division3(int x, int y) 
+    {
+        Integer resultado = null;
+
+        try 
+        {
+
+            if(y==0)
+            {
+                //throw new ExcepcionDivision();
+                throw new ExcepcionDivision("La division" + x + 
+                                " entre " + y + " no es posible");
+            }
+            else
+            {
+                resultado = x / y;
+            }
+        }
+        catch(ExcepcionDivision exDiv0)
+        {
+            System.out.println(exDiv0.getMessage());
+        }
+
+        return resultado;
+
+    }
 }

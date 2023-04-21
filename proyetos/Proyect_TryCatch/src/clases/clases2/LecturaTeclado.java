@@ -26,8 +26,14 @@ public class LecturaTeclado {
             {
                 String cadenaLeida = sc.nextLine();
                 resultado = Integer.valueOf(cadenaLeida);
+                
                 correcto = true;
                 
+            }
+            
+            catch(NumberFormatException excepcion1)
+            {
+                System.out.println("Dato no válido….Introduzca un dado válido por favor");
             }
             catch(IllegalStateException ex2)
             {
@@ -35,11 +41,6 @@ public class LecturaTeclado {
                 resultado = 0;
                 correcto = true;
             }
-            catch(NumberFormatException excepcion1)
-            {
-                System.out.println("Dato no válido….Introduzca un dado válido por favor");
-            }
-            
             catch(Exception ex)
             {
                 System.out.println("Dato no válido….Introduzca un dado válido por favor (cod-02)");
