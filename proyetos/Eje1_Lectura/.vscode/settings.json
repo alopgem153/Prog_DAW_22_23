@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/alfonso/Documentos/docencia/programacion/Practicas_DAW_22_23/Prog_DAW_22_23/proyetos/LecturaTeclado/LecturaTeclado.jar"
+    ]
+}
