@@ -1,0 +1,9 @@
+Este fichero es 
+
+un fichero nuevo 
+
+    que es de tipo texto
+
+ultima linea
+
+src/recursos/fichero1.txt
