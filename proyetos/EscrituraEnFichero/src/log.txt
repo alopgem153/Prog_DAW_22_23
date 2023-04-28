@@ -1,0 +1,7 @@
+28/04/2023 13:22:36 - INFORMACION : Se ha escrito: hola
+28/04/2023 13:22:38 - INFORMACION : Se ha escrito: adios
+28/04/2023 13:22:42 - INFORMACION : Se ha escrito:      gggg
+28/04/2023 13:22:45 - INFORMACION : Se ha escrito: adios
+28/04/2023 13:23:22 - INFORMACION : Se ha escrito: otra vez
+28/04/2023 13:23:25 - INFORMACION : Se ha escrito: adios tu
+28/04/2023 13:23:54 - ERROR : java.io.FileNotFoundException: src/recursoss/ficheroNuevo.txt (No existe el archivo o el directorio)

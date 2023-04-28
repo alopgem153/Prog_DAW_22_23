@@ -3,6 +3,8 @@ import java.io.FileWriter;
 import java.nio.file.Path;
 import java.util.Scanner;
 
+import logCutre.LogDaw;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, Escritura en fichero!");
@@ -30,8 +32,10 @@ public class App {
 
             System.out.println("Dime la 1º linea...");
             String linea = sc.nextLine();
+            
             while (!linea.equals("fin"))
             {
+                LogDaw.NuevaEntradaALog("Se ha escrito: " + linea, LogDaw.Tipo.INFORMACION);
                 bufferedWriter.write(linea);
                 bufferedWriter.newLine();
                 System.out.println("Dime otra linea...");
@@ -47,7 +51,8 @@ public class App {
         }
         catch(Exception ex)
         {
-            System.out.println(ex);
+            LogDaw.NuevaEntradaALog(ex.toString(), LogDaw.Tipo.ERROR);
+            //System.out.println(ex);
         }
         finally
         {
