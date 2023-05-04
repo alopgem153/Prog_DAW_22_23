@@ -26,7 +26,17 @@ public class Alumno implements Comparable<Alumno> {
 
     @Override
     public int compareTo(Alumno o) {
-        return this.edad - o.edad;
+        if (this.edad == o.getEdad())
+        {
+            Double alturaThis = Double.valueOf(this.altura);
+            Double alturaO = Double.valueOf(o.getAltura());
+
+            return alturaThis.compareTo(alturaO);
+        }
+        else 
+        {
+            return (this.edad - o.edad)  ;
+        }
 
     }
 

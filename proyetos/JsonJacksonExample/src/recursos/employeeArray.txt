@@ -1,0 +1,49 @@
+[
+  {
+    "id": 123,
+    "name": "Pankaj",
+    "permanent": true,
+    "address": {
+      "street": "Albany Dr",
+      "city": "San Jose",
+      "zipcode": 95129
+    },
+    "phoneNumbers": [
+      123456,
+      987654
+    ],
+    "role": "Manager",
+    "cities": [
+      "Los Angeles",
+      "New York"
+    ],
+    "properties": {
+      "age": "29 years",
+      "salary": "1000 USD"
+    }
+  },
+
+  {
+  "id": 555,
+  "name": "Daniel",
+  "permanent": true,
+  "address": {
+    "street": "Calle Grande",
+    "city": "Mijas",
+    "zipcode": 29015
+  },
+  "phoneNumbers": [
+    687123456,
+    5551234
+  ],
+  "role": "Manager",
+  "cities": [
+    "Malaga",
+    "New York"
+  ],
+  "properties": {
+    "age": "40 years",
+    "salary": "2000 USD"
+  }
+}
+]

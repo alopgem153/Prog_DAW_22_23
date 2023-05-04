@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/alfonso/Documentos/docencia/programacion/Tema10 - Ficheros/jackson-annotations-2.14.2.jar",
+        "/home/alfonso/Documentos/docencia/programacion/Tema10 - Ficheros/jackson-core-2.14.2.jar",
+        "/home/alfonso/Documentos/docencia/programacion/Tema10 - Ficheros/jackson-databind-2.14.2.jar"
+    ]
+}
