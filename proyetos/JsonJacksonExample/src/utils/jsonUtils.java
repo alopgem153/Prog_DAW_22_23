@@ -16,6 +16,8 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import modelo.Address;
 import modelo.Coche;
 import modelo.Employee;
+import modelo.People;
+import modelo.Persona;
 
 public class jsonUtils {
 
@@ -207,6 +209,82 @@ public class jsonUtils {
 			System.out.println(e);
 		}
 	
+	}
+
+
+	public static People leerFicheroPersonas()
+	{
+		People gentes = null;
+
+		try 
+		{
+			File ficheroPersona = new File("src/recursos/personas.json");
+
+			ObjectMapper mapper = new ObjectMapper();
+
+
+			gentes = mapper.readValue(ficheroPersona, People.class);
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
+		return gentes;
+	}
+
+
+
+    public static void crearFicheroPersonas(People persona2) {
+
+		try 
+		{
+			File ficheroNuevoPersona = new File("src/recursos/personas24.json");
+
+			ObjectMapper mapper = new ObjectMapper();
+			mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
+
+			mapper.writeValue(ficheroNuevoPersona, persona2);
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
+
+    }
+
+
+
+    public static void crearFicheroDiccionario(HashMap<String, Persona> diccionarioPersonas) 
+	{
+		try 
+		{
+			File ficheroNuevo = new File("src/recursos/diccionarioPersona.json");
+
+			ObjectMapper mapper = new ObjectMapper();
+			mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
+
+			mapper.writeValue(ficheroNuevo, diccionarioPersonas);
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
+	
+	}
+
+
+
+	public static HashMap<String, Persona> leerJsonDiccionariopersona() {
+		HashMap<String, Persona> dicc  = null;
+
+		try {
+			ObjectMapper mapper = new ObjectMapper();
+
+			File fichero = new File("src/recursos/diccionarioPersona.json");
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 
 	

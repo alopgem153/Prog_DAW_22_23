@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import modelo.Coche;
 import modelo.Employee;
+import modelo.People;
+import modelo.Persona;
 import utils.jsonUtils;
 
 public class App {
@@ -46,5 +50,45 @@ public class App {
 
 
         jsonUtils.crearFicheroCoches(listaCoches);
+
+
+        System.out.println("=============== ARRAY de PERSONAS ============================");
+
+        People people = jsonUtils.leerFicheroPersonas();
+
+        for (Persona persona : people.getPeople()) {
+            System.out.println(persona);
+        } 
+
+        
+
+        ArrayList<Persona> personasCon24 = new ArrayList<>();
+
+        for (Persona persona : people.getPeople()) {
+            if (persona.getAge().equals(24))
+            {
+                personasCon24.add(persona);
+            }
+        }
+
+        People persona2 = new People();
+
+        persona2.setPeople(personasCon24);
+
+        jsonUtils.crearFicheroPersonas(persona2);
+
+        System.out.println("=============== HASHMAP<DNI:PERSONA> ============================");
+
+        // HashMap<String, Persona> diccionarioPersonas = new HashMap<>();
+
+        // diccionarioPersonas.put("12345678P", people.getPeople().get(0));
+        // diccionarioPersonas.put("98765432Z", people.getPeople().get(1));
+        // diccionarioPersonas.put("55578321Y", people.getPeople().get(2));
+
+        // jsonUtils.crearFicheroDiccionario(diccionarioPersonas);
+
+        HashMap<String, Persona> diccionarioPersonas = jsonUtils.leerJsonDiccionariopersona();
+
+
     }
 }
