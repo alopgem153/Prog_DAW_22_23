@@ -5,7 +5,9 @@ import java.util.List;
 import modelo.Coche;
 import modelo.Employee;
 import modelo.People;
+import modelo.People2;
 import modelo.Persona;
+import modelo.Persona2;
 import utils.jsonUtils;
 
 public class App {
@@ -60,7 +62,17 @@ public class App {
             System.out.println(persona);
         } 
 
+
+        System.out.println("=============== ARRAY de PERSONAS 2 (ESPAÑOL) ============================");
+
+        People2 people2 = jsonUtils.leerFicheroPersonas2();
+
+        for (Persona2 persona : people2.getPeople()) {
+            System.out.println(persona);
+        } 
         
+        System.out.println("==============================================");
+
 
         ArrayList<Persona> personasCon24 = new ArrayList<>();
 

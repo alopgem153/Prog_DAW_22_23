@@ -17,6 +17,7 @@ import modelo.Address;
 import modelo.Coche;
 import modelo.Employee;
 import modelo.People;
+import modelo.People2;
 import modelo.Persona;
 
 public class jsonUtils {
@@ -232,6 +233,26 @@ public class jsonUtils {
 		return gentes;
 	}
 
+
+	public static People2 leerFicheroPersonas2()
+	{
+		People2 gentes = null;
+
+		try 
+		{
+			File ficheroPersona = new File("src/recursos/personas.json");
+
+			ObjectMapper mapper = new ObjectMapper();
+
+
+			gentes = mapper.readValue(ficheroPersona, People2.class);
+		}
+		catch(Exception ex)
+		{
+			System.out.println(ex);
+		}
+		return gentes;
+	}
 
 
     public static void crearFicheroPersonas(People persona2) {
